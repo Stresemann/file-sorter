@@ -1,0 +1,12 @@
+The sorting algorithm selected here is the bubble sort algorithm. This is so the original order can be maintained and all that will need to be done is switch the order of the alpabetical elements or the numerical elements.
+It looks at two elements at a time and switches their locations if the latter is smaller than the former.
+In the worst case all of the items will need to be switched as in a reverse order. Therefore the number of iterations would be n where n is the number of elements (n^2). The best case schendario will be if the list is already sorted, in this case the elements will be iterated though once.
+The algorithm has been optimized such that it will not iterate over the right end elements again after completing an iteration there. This is because the largest element will be at the end after a first pass.
+Duplicate words will not have an effect to this algorithm runtime.
+
+Another algorithm would be the exchange sort. This will look at each element and all elements ahead of it and exchange them if they are not in order. It will work in this case because the elements will keep their original order while simply exchanging the elemens similar to the bubble sort.
+This algorithm will always iterate over all n elements n number (n^2) of times and duplicate words do not matter. 
+
+Insertion sort is another possible algorithm that is similar to bubble sort but will iterate over preceeding elements in order and switch the order after finding one that is greater than it.
+In the best case it will iterate over all of the elements once.
+In worst case it will iterate over all n elements n number (n^2) of times and duplicate words do not matter. 
