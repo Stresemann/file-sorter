@@ -11,7 +11,7 @@ if __name__ == "__main__":
     f = open(sys.argv[1], "r")
     cleanedStr = clean_string(f.read())
     # Split by spaces into array 
-    arr = cleanedStr.split(" ")
+    arr = cleanedStr.split()
     bubble_sort(arr)
     f = open(sys.argv[2], "w")
     f.write(" ".join(arr))

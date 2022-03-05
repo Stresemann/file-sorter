@@ -21,7 +21,7 @@ def bubble_sort(arr):
             # Remove dash from beginning of string if it exists
             arr[a[0]] = a[1].lstrip('-')
             # Swap the locations of the words if the last word is greather than the current word
-            if lastA[1] > a[1]:
+            if lastA[1] > a[1].lstrip('-'):
                 arr[lastA[0]] = a[1]
                 arr[a[0]] = lastA[1]
                 # Set the last number variable to the new location of the last word
@@ -42,7 +42,7 @@ def bubble_sort(arr):
             else:
                 lastN = a
     iterations += 1
-    
+
     # If There have been switches sort again otherwise return
     if switched:
         bubble_sort(arr)
